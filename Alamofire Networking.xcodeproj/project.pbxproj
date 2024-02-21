@@ -13,6 +13,7 @@
 		245D7C072B86201A00300322 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 245D7C052B86201A00300322 /* Main.storyboard */; };
 		245D7C092B86201F00300322 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 245D7C082B86201F00300322 /* Assets.xcassets */; };
 		245D7C0C2B86201F00300322 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 245D7C0A2B86201F00300322 /* LaunchScreen.storyboard */; };
+		D6CD9C740E690E0A57B6DAD0 /* Pods_Alamofire_Networking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 90F276C850633696C481AC42 /* Pods_Alamofire_Networking.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,9 @@
 		245D7C082B86201F00300322 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		245D7C0B2B86201F00300322 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		245D7C0D2B86201F00300322 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7F1B9DEC982D80794F1F90AB /* Pods-Alamofire Networking.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Alamofire Networking.debug.xcconfig"; path = "Target Support Files/Pods-Alamofire Networking/Pods-Alamofire Networking.debug.xcconfig"; sourceTree = "<group>"; };
+		90F276C850633696C481AC42 /* Pods_Alamofire_Networking.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Alamofire_Networking.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9DED66C63FC5D2A2FC29DEAB /* Pods-Alamofire Networking.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Alamofire Networking.release.xcconfig"; path = "Target Support Files/Pods-Alamofire Networking/Pods-Alamofire Networking.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +35,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D6CD9C740E690E0A57B6DAD0 /* Pods_Alamofire_Networking.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +47,8 @@
 			children = (
 				245D7BFE2B86201A00300322 /* Alamofire Networking */,
 				245D7BFD2B86201A00300322 /* Products */,
+				C44311463DB285124CB8CB63 /* Pods */,
+				8338B74DACC4B0297BC4816B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -67,6 +74,23 @@
 			path = "Alamofire Networking";
 			sourceTree = "<group>";
 		};
+		8338B74DACC4B0297BC4816B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				90F276C850633696C481AC42 /* Pods_Alamofire_Networking.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C44311463DB285124CB8CB63 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7F1B9DEC982D80794F1F90AB /* Pods-Alamofire Networking.debug.xcconfig */,
+				9DED66C63FC5D2A2FC29DEAB /* Pods-Alamofire Networking.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,9 +98,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 245D7C102B86201F00300322 /* Build configuration list for PBXNativeTarget "Alamofire Networking" */;
 			buildPhases = (
+				A7565B6EE3016A656510434B /* [CP] Check Pods Manifest.lock */,
 				245D7BF82B86201A00300322 /* Sources */,
 				245D7BF92B86201A00300322 /* Frameworks */,
 				245D7BFA2B86201A00300322 /* Resources */,
+				27193F8F00F6B4F084B02706 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -132,6 +158,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		27193F8F00F6B4F084B02706 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Alamofire Networking/Pods-Alamofire Networking-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Alamofire Networking/Pods-Alamofire Networking-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Alamofire Networking/Pods-Alamofire Networking-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A7565B6EE3016A656510434B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Alamofire Networking-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		245D7BF82B86201A00300322 /* Sources */ = {
@@ -282,11 +350,13 @@
 		};
 		245D7C112B86201F00300322 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7F1B9DEC982D80794F1F90AB /* Pods-Alamofire Networking.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Alamofire Networking/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -294,6 +364,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -309,11 +380,13 @@
 		};
 		245D7C122B86201F00300322 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9DED66C63FC5D2A2FC29DEAB /* Pods-Alamofire Networking.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Alamofire Networking/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -321,6 +394,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
